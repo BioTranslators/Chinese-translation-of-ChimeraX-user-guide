@@ -1,4 +1,4 @@
-![ChimeraX](../docs/media/ChimeraX-icon512.png ':size=100x100')
+![ChimeraX](docs/media/ChimeraX-icon512.png ':size=100x100')
 # ChimeraX 用户手册<small>Unfinished</small>
 
 > May good luck with you !
