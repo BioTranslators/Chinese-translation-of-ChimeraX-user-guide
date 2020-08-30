@@ -156,3 +156,8 @@ Solvent accessible area for #1 & ~solvent = 34093
 
 ## 示例：密度图命令
 
+示例数据：
+- [EMD-1080](https://www.ebi.ac.uk/pdbe/entry/emdb/EMD-1080)，GroEL的11.5Å单粒子重建和原子结构, [1GRL](http://www.rcsb.org/pdb/explore.do?structureId=1grl)
+- [EMD-1273](https://www.ebi.ac.uk/pdbe/entry/emdb/EMD-1273), 免疫突触的断层图。
+- PDB [1A0M](http://www.rcsb.org/pdb/explore.do?structureId=1a0m)，也即α-conotoxin的晶体密度（来自[电子密度服务器](http://eds.bmc.uu.se/eds/index.html)）和原子结构
+
