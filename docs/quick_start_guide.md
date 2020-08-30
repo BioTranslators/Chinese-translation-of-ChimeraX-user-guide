@@ -20,7 +20,7 @@
 示例结构：Protein DataBank [2BBV](http://www.rcsb.org/pdb/explore.do?structureId=2bbv), 黑甲虫病毒衣壳
 
 
-> open 2bbv
+> open 2bbv  
 > light full
 
 ![](https://www.cgl.ucsf.edu/chimerax/docs/quickstart/images/colorchain.png)
@@ -63,7 +63,7 @@
 
 按下向上箭头来扩张选择区域，按下向下箭头来收缩选择区域。
 
-> color sel gold
+> color sel gold  
 > select clear
 
 ![](https://www.cgl.ucsf.edu/chimerax/docs/quickstart/images/color.png)
@@ -77,7 +77,7 @@
 
 展示每条链的溶剂排斥表面。
 
-> style solvent sphere
+> style solvent sphere  
 > style ~solvent stick
 
 ![](https://www.cgl.ucsf.edu/chimerax/docs/quickstart/images/water.png)
@@ -109,8 +109,8 @@
 
 把所有模型显示出来
 
-> set bg white
-> set silhouettes true
+> set bg white  
+> set silhouettes true  
 > save ~/Desktop/2bbv.png
 
 ![](https://www.cgl.ucsf.edu/chimerax/docs/quickstart/images/view3nice.png)
@@ -123,8 +123,35 @@
 
 影片被保存在桌面，命名为movie.mp4
 
+> measure buriedarea /a with /b   
+> measure sasa #1 & ~solvent
 
+```log
+Buried area between /a and /b = 1900.4
+area /a = 15385, area /b = 14989, area both = 26573
 
+Solvent accessible area for #1 & ~solvent = 34093
+```
+
+计算链A和链B的溶剂可及的埋藏表面积，也计算总非水溶剂可及表面积。
+
+> interfaces #1 & protein
+
+![](https://www.cgl.ucsf.edu/chimerax/docs/quickstart/images/contacts.png)
+
+```log
+6 buried areas: 
+  C A 1675, C B 1671, A B 1663,
+  C F 739, A D 714, B E 699
+```
+
+展示所有链之间的联系图谱。
+
+> close  
+> set bg black  
+> set silhouettes false
+
+关闭所有3D数据，设置背景色为黑色，不显示轮廓线。
 
 
 ## 示例：密度图命令
