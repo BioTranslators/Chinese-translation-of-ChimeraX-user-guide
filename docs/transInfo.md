@@ -50,9 +50,9 @@ _sidebar.md内则写明了侧边栏的内容，这是一个很重要的文件，
 ## 关于视频的处理 200830
 插入到markdown文档中，参见<https://angry-swanson-b4e47b.netlify.app/zh-cn/embed-files>，代码示例：
 ```markdown
-[spin movie](../media/quick_start_guide_spin.mp4 ':include')
+[spin movie](media/quick_start_guide_spin.mp4 ':include')
 ```
-要注意插入的语法，`':include'`与文件名中间只有一个空格
+要注意插入的语法，`':include'`与文件名中间只有一个空格，默认工作目录是在docs文件夹里，所以写medie路径的时候从media开始写，放在media文件夹里的图片等也是同理。
 
 
 **media**文件夹被用于存放某些多媒体文件，图片文件一般直接引用原始链接，但某些多媒体文件可能原始链接插入到译文中无法生效，可以下载到media文件夹中并插入到译文。如果多媒体文件名有重复，可以在名字前面加上前缀：译文名 + 文件名，如`quick_start_guide_spin.mp4`。
