@@ -18,12 +18,26 @@
 ## 示例：原子级别结构的命令
 
 示例结构：Protein DataBank [2BBV](http://www.rcsb.org/pdb/explore.do?structureId=2bbv), 黑甲虫病毒衣壳
----
+
+
 > open 2bbv
 > light full
 
 ![](https://www.cgl.ucsf.edu/chimerax/docs/quickstart/images/colorchain.png)
 
 文件从PDB以mmCIF格式取回并缓存在本地。照亮、有阴影。
+
+> style /b stick
+
+![](https://www.cgl.ucsf.edu/chimerax/docs/quickstart/images/stick.png)
+
+把b链显示为stick模式。
+
+
+
+
+
+
+
 
 ## 示例：密度图命令
