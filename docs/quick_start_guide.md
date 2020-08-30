@@ -119,7 +119,7 @@
 
 > 点击录影机图标![camera](https://www.cgl.ucsf.edu/chimerax/docs/user/tools/shortcut-icons/video.png ':size=20x20')以录制一个旋转影片
 
-[spin movie](docs/media/quick_start_guide_spin.mp4 ':include')
+[spin movie](media/quick_start_guide_spin.mp4 ':include')
 
 影片被保存在桌面，命名为movie.mp4
 
