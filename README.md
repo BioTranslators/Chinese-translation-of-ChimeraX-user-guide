@@ -7,3 +7,5 @@
 This repository is simplified chinese translation of [ChimeraX User Guide](https://www.cgl.ucsf.edu/chimerax/docs/user/index.html).
 
 Please visit <https://biotranslators.github.io/Chinese-translation-of-ChimeraX-user-guide/>.
+
+Feel free to issue or PR.
