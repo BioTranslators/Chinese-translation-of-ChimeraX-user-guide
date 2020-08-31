@@ -1,4 +1,6 @@
-# 快速开始引导
+# 快速开始引导 ![](https://www.cgl.ucsf.edu/chimerax/docs/user/ChimeraX-docs-icon.svg ':size=50x50')![](https://www.cgl.ucsf.edu/chimerax/docs/user/ChimeraX-home-icon.svg ':size=50x50')
+
+> 原文档：https://www.cgl.ucsf.edu/chimerax/docs/quickstart/index.html
 
 [UCSF ChimeraX](http://www.rbvi.ucsf.edu/chimerax/)是加州旧金山大学[RBVI](http://www.rbvi.ucsf.edu/)项目中产生的[Chimera](http://www.rbvi.ucsf.edu/chimera/)之后一代可视化程序。参见[ChimeraX 教程](http://www.rbvi.ucsf.edu/chimerax/tutorials.html)
 

@@ -44,7 +44,9 @@ _sidebar.md内则写明了侧边栏的内容，这是一个很重要的文件，
 图片目前先一律使用原始链接，用图片的方式插入到markdown中即可。排版方式可能没法按照原始网页进行排版，可以进行适当调整。
 如果要修改图片尺寸，请参考<https://docsify.js.org/#/helpers?id=resizing>
 
+```
 ![camera](https://www.cgl.ucsf.edu/chimerax/docs/user/tools/shortcut-icons/video.png ':size=20x20')
+```
 
 
 ## 关于视频的处理 200830
