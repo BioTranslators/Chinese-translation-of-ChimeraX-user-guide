@@ -33,7 +33,7 @@
 
 把b链显示为stick模式。
 
-> *鼠标拖动来移动*
+> 鼠标拖动来移动
 
 ![](https://www.cgl.ucsf.edu/chimerax/docs/quickstart/images/shift.png)
 
@@ -51,13 +51,13 @@
 
 显示骨架色带
 
-> *按下ctrl键的同时鼠标点击来选择一个原子*
+> 按下ctrl键的同时鼠标点击来选择一个原子
 
 ![](https://www.cgl.ucsf.edu/chimerax/docs/quickstart/images/select.png)
 
 被选中的会有一个绿色的轮廓线，按下shift和ctrl的同时点击来添加一个选择，按下ctrl同时点击背景来清除一个选择。
 
-> *按下向上箭头*
+> 按下向上箭头
 
 ![](https://www.cgl.ucsf.edu/chimerax/docs/quickstart/images/uparrow.png)
 
@@ -161,3 +161,106 @@ Solvent accessible area for #1 & ~solvent = 34093
 - [EMD-1273](https://www.ebi.ac.uk/pdbe/entry/emdb/EMD-1273), 免疫突触的断层图。
 - PDB [1A0M](http://www.rcsb.org/pdb/explore.do?structureId=1a0m)，也即α-conotoxin的晶体密度（来自[电子密度服务器](http://eds.bmc.uu.se/eds/index.html)）和原子结构
 
+> open 1080 from emdb  
+> light full
+
+![](https://www.cgl.ucsf.edu/chimerax/docs/quickstart/images/emdb1080.png)
+
+打开EM数据库图1080，照亮、有阴影
+
+> volume #1 level 9
+
+![](https://www.cgl.ucsf.edu/chimerax/docs/quickstart/images/level.png)
+
+在图上悬停鼠标，在状态行中会报告当前轮廓水平为1.675；然后更改水平。
+
+> 点击图标 ![](https://www.cgl.ucsf.edu/chimerax/docs/user/tools/mouse-icons/contour.png ':size=20x20')（在[工具栏]的**Right Mouse**标签里），来用鼠标控制轮廓水平，按下鼠标右键拖动
+
+![](https://www.cgl.ucsf.edu/chimerax/docs/quickstart/images/mouselevel.png)
+
+如果是Mac的单键鼠标，按下**command**键的同时拖动
+
+> vol #1 enclose 1e6 step 1 color tan
+
+![](https://www.cgl.ucsf.edu/chimerax/docs/quickstart/images/enclose.png)
+
+把水平设置为封闭的1,000,000立方埃，显示全分辨率，并设置颜色
+
+> set bg gray  
+> set silhouettes true  
+
+![](https://www.cgl.ucsf.edu/chimerax/docs/quickstart/images/litmap.png)
+
+设置背景为灰色和窄黑色轮廓线
+
+> open 1grl 
+> light default  
+
+![](https://www.cgl.ucsf.edu/chimerax/docs/quickstart/images/1grl.png)
+
+打开原子模型来适配密度图，更简单的打光，没有阴影
+
+> 点击图标 ![](https://www.cgl.ucsf.edu/chimerax/docs/user/tools/mouse-icons/move_h2o.png ':size=20x20') ，用鼠标来移动选中的部分。**Ctrl**加鼠标单击原子来选中。然后用鼠标右键拖动来移动分子进入密度图。
+
+![](https://www.cgl.ucsf.edu/chimerax/docs/quickstart/images/handfit.png)
+
+点击 ![](https://www.cgl.ucsf.edu/chimerax/docs/user/tools/mouse-icons/rotate_h2o.png ':size=20x20') 图标，可以进入到旋转选中部分的鼠标模式。
+
+> fit #2 in #1  
+> volume #1 transparency 0.5  
+
+![](https://www.cgl.ucsf.edu/chimerax/docs/quickstart/images/fitmap.png)
+
+在密度图中对原子模型进行局部对齐的优化。让密度图50%透明
+
+> molmap #2 10  
+> vol #3 style mesh
+
+![](https://www.cgl.ucsf.edu/chimerax/docs/quickstart/images/molmap.png)
+
+建立原子模型的10埃分辨率模拟图，表示为网格。
+
+> vol subtract #1 #3 minrms t  
+> vol #4 color pink transparency 0  
+> hide atoms; show riboon  
+
+![](https://www.cgl.ucsf.edu/chimerax/docs/quickstart/images/vopsub2.png)
+
+从实验图上分解出模拟图
+
+> close  
+> set bg black; set silhouettes false  
+> open 1a0m from eds
+
+![](https://www.cgl.ucsf.edu/chimerax/docs/quickstart/images/eds_1a0m.png)
+
+打开来自电子密度服务器的PDB 1a0m 的x-ray图
+
+> open 1a0m  
+> hide ribbon  
+> show atoms  
+> vol #1 level 1.0 style mesh  
+
+![](https://www.cgl.ucsf.edu/chimerax/docs/quickstart/images/1a0m.png)
+
+显示原子模型，并调整x-ray图的轮廓水平。
+
+> vol zone #1 near #2 range 2  
+> vol #1 level 0.5 transp 0.6
+
+![](https://www.cgl.ucsf.edu/chimerax/docs/quickstart/images/zone.png)
+
+显示原子间隔在两埃之内的图区
+
+> close  
+> open emdb:1273
+
+![](https://www.cgl.ucsf.edu/chimerax/docs/quickstart/images/emdb1273.png)
+
+打开T细胞的断层扫描图（200 MB），因为图较大，所以显示为单平面灰度图
+
+> volume #1 region all showOutline true  
+
+![](https://www.cgl.ucsf.edu/chimerax/docs/quickstart/images/grayscale.png)
+
+显示断层图的所有平面，进行灰度渲染。
