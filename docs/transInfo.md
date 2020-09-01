@@ -10,17 +10,19 @@
 
 git操作可以参考廖雪峰的[git教程](https://www.liaoxuefeng.com/wiki/896043488029600)，GitHub的操作很简单，可以看看知乎的话题。
 
-安装git的话，如果你是windows，比较推荐你[cmder](https://cmder.net/)这个集成了git的命令行工具，不用安装就可以用，或者你也可以选择git的一个desktop版本。装好git之后需要配置ssh密钥到你的个人账号，配置好之后就可以在本地访问GitHub的仓库了。
+安装git的话，如果你是windows，比较推荐你[cmder](https://cmder.net/)这个集成了git的命令行工具，不用安装就可以用，或者你也可以直接下载git for windows。装好git之后需要配置ssh密钥到你的个人账号，配置好之后就可以在本地访问GitHub的仓库了。
 
 
 ## 关于docsify 200826
 docsify是网站所使用的框架。我们这个网站主要由一个index.html文件以及众多markdown文件构成。
+
 index.html是必要的，里面设置了很多网站参数。
-_coverpage.md控制封面内容
+_coverpage.md控制封面内容。
 README.md(这里指doc文件夹内的README.md)控制封面下滑页面的内容。
 _sidebar.md内则写明了侧边栏的内容，这是一个很重要的文件，我们依靠它连接网站首页和我们的译文页面。
 其它的md文件则主要是我们的译文文件了。
-如果愿意，其实可以在电脑里装上npm，然后用npm装上docsify-cli，如此，可以通过`docsify serve ./docs`一边编辑一边实时预览自己的译文。
+
+如果需要实时预览自己的译文，可以在电脑里装上npm（要装上[nodejs](https://nodejs.org/zh-cn/)，这是一个js的"解释器"，npm是它的包管理器；js、nodejs、npm这三者的关系类似于python、python解释器、pip）。然后用npm装上docsify-cli，如此，可以通过`docsify serve ./docs`一边编辑一边实时预览自己的网站。
 
 
 ## 关于译文文件命名和修改_sidebar.md 200826
@@ -51,9 +53,11 @@ _sidebar.md内则写明了侧边栏的内容，这是一个很重要的文件，
 
 ## 关于视频的处理 200830
 插入到markdown文档中，参见<https://angry-swanson-b4e47b.netlify.app/zh-cn/embed-files>，代码示例：
+
 ```markdown
 [spin movie](media/quick_start_guide_spin.mp4 ':include')
 ```
+
 要注意插入的语法，`':include'`与文件名中间只有一个空格，默认工作目录是在docs文件夹里，所以写medie路径的时候从media开始写，放在media文件夹里的图片等也是同理。
 
 
@@ -90,6 +94,7 @@ select protein
 我在cmder的目录下发现了一个git的可视化工具，cmder\vendor\git-for-windows\cmd\git-gui.exe，可以完成git的大多数任务，有点儿界面，可以看到文件的哪些地方被更改，还挺好的。
 
 关于它中文显示为乱码的问题，可以参考<https://gist.github.com/nightire/5069597>；在cmder里面输入这几条命令就可以了：
+
 ```cmder
 git config --global core.quotepath false  		# 显示 status 编码
 git config --global gui.encoding utf-8			# 图形界面编码
