@@ -78,3 +78,15 @@ select protein
 所有软件中按钮或者按键的翻译，建议使用加粗标示，比如**File**。
 
 如果使用`>`创建多行引用来表示命令，记得在每行命令末尾加上*两个空格*，防止解析的时候被显示为一行。
+
+## 关于cmder的git 200901
+
+我在cmder的目录下发现了一个git的可视化工具，cmder\vendor\git-for-windows\cmd\git-gui.exe，可以完成git的大多数任务，有点儿界面，可以看到文件的哪些地方被更改，还挺好的。
+
+关于它中文显示为乱码的问题，可以参考<https://gist.github.com/nightire/5069597>；在cmder里面输入这几条命令就可以了：
+```cmder
+git config --global core.quotepath false  		# 显示 status 编码
+git config --global gui.encoding utf-8			# 图形界面编码
+git config --global i18n.commit.encoding utf-8	# 提交信息编码
+git config --global i18n.logoutputencoding utf-8	# 输出 log 编码
+```
