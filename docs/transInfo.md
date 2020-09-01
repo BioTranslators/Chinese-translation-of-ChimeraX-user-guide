@@ -80,12 +80,12 @@ select protein
 如果使用`>`创建多行引用来表示命令，记得在每行命令末尾加上*两个空格*，防止解析的时候被显示为一行。
 
 
-## 关于xxx.github.io无法访问的问题
+## 关于xxx.github.io无法访问的问题 200901
 
 参考<https://juejin.im/post/6863358382410203144>，改改DNS就好了；如果有必要，或许我们应该迁移到gitee?!
 
 
-## 关于cmder的git 200901
+## 关于cmder的git-gui 200901
 
 我在cmder的目录下发现了一个git的可视化工具，cmder\vendor\git-for-windows\cmd\git-gui.exe，可以完成git的大多数任务，有点儿界面，可以看到文件的哪些地方被更改，还挺好的。
 
@@ -97,3 +97,4 @@ git config --global i18n.commit.encoding utf-8	# 提交信息编码
 git config --global i18n.logoutputencoding utf-8	# 输出 log 编码
 ```
 
+常见git客户端比如说git desktop，今天也看到一个评价比较好的，[Tower](https://www.git-tower.com/windows)，它的官网的git教程也是很不错的，如果不喜欢命令行，可以下载Tower试试。
